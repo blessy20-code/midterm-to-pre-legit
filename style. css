@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background: #100b1c;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #1b1230;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header span, h1 span {
+  color: #b56aff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #b56aff;
+}
+
+section {
+  min-height: 100vh;
+  padding: 110px 10% 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.hero {
+  background: linear-gradient(135deg, #160e29, #482477);
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 15px;
+}
+
+.hero p {
+  color: #d0c0e5;
+  margin: 10px;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.card {
+  background: #211735;
+  border: 1px solid #7541a5;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 12px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.card h3 {
+  color: #c18aff;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #c5b5d9;
+  line-height: 1.8;
+}
+
+.btn {
+  background: #963cff;
+  color: white;
+  text-decoration: none;
+  padding: 13px 28px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.skills, .socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 650px;
+}
+
+.skills div, .socials a {
+  background: #291b40;
+  border: 1px solid #963cff;
+  padding: 15px 22px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.socials a:hover, .btn:hover {
+  background: #b56aff;
+  transform: translateY(-3px);
+}
+
+footer {
+  background: #1b1230;
+  text-align: center;
+  padding: 15px;
+  color: #c5b5d9;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 11px;
+    margin: 5px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
